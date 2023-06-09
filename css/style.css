@@ -4,3 +4,10 @@
     box-sizing: border-box;
 }
 
+.bg-title{
+    background-color: rgba(0, 217, 255, 0.137);
+}
+
+.bg-list{
+    background-color: rgba(0, 68, 255, 0.164);
+}
