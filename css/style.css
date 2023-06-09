@@ -11,3 +11,7 @@
 .bg-list{
     background-color: rgba(0, 68, 255, 0.164);
 }
+
+.checked{
+    color: red;
+}
