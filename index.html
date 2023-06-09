@@ -10,7 +10,23 @@
 </head>
 <body>
     <div id="app">
-        
+        <div class="container py-5">
+            <div class="row bg-title">
+                <div class="col-12 text-center">
+                    <h1>To Do List &check;</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row bg-list">
+                <div class="col-12">
+                    <ul class="list-unstyled">
+                        <li v-for="(task, index) in tasks">
+                            {{ task.text }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
