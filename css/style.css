@@ -10,19 +10,13 @@
 
 .bg-list{
     background-color: rgba(0, 68, 255, 0.164);
+
 }
 
 .checked{
     text-decoration: line-through;
 }
 
-.check-box{
-    
-}
 .padding-x{
     padding: 4px 9px;
-}
-
-.delete-box{
-
 }

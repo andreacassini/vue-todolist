@@ -31,5 +31,17 @@ createApp ({
         deleteTask(index){
             this.tasks.splice(index, 1);
         },
+        addTask(){
+            if (this.newTask !== ''){
+                let object = {
+
+                    text : this.newTask,
+                    done : false
+                };
+                
+                this.tasks.push(object);
+                this.newTask = '';
+            }
         }
+    }
 }).mount('#app')

@@ -18,17 +18,29 @@
                 </div>
             </div>
             <hr>
-            <div class="row bg-list">
+            <div class="row bg-list py-3">
+                <div class="d-flex align-items-center mb-3">
+                    <div>
+                        <input type="text" placeholder="Add something..." class="ps-1" v-model="newTask" @keyup.enter="addTask">
+                    </div>
+                    <div>
+                        <button class="btn btn-secondary ms-3" @click="addTask">
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
                 <div class="col-12">
                     <ul class="list-unstyled">
-                        <li class="py-2" v-for="(task, index) in tasks" :class="{checked: task.done}">
-                            {{ task.text }}
-                            <button class="btn btn-sm btn-success check-box" :class=" task.done ? 'btn-dark padding-x' : 'btn-success' " @click="changeTask(index)">
-                                <i class="fas" :class=" task.done ? 'fa-x' : 'fa-check' "></i>
-                            </button>
-                            <button class="btn btn-sm btn-danger " @click="deleteTask(index)">
-                                <i class="fas fa-trash delete-box"></i>
-                            </button>
+                        <li class="py-2 d-flex justify-content-between" v-for="(task, index) in tasks" :class="{checked: task.done}">
+                            <div>{{ task.text }}</div>
+                            <div>
+                                <button class="btn btn-sm btn-success check-box" :class=" task.done ? 'btn-dark padding-x' : 'btn-success' " @click="changeTask(index)">
+                                    <i class="fas" :class=" task.done ? 'fa-x' : 'fa-check' "></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger mx-2" @click="deleteTask(index)">
+                                    <i class="fas fa-trash delete-box"></i>
+                                </button>   
+                            </div>
                         </li>
                     </ul>
                 </div>
