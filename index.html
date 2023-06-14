@@ -23,7 +23,7 @@
                     <ul class="list-unstyled">
                         <li class="py-2" v-for="(task, index) in tasks" :class="{checked: task.done}">
                             {{ task.text }}
-                            <button class="btn btn-sm btn-success button-check" :class=" task.done ? 'btn-danger' : 'btn-success' " @click="changeTask(index)">
+                            <button class="btn btn-sm btn-success button-check" :class=" task.done ? 'btn-danger padding-x' : 'btn-success' " @click="changeTask(index)">
                                 <i class="fas" :class=" task.done ? 'fa-x' : 'fa-check' "></i>
                             </button>
                         </li>
