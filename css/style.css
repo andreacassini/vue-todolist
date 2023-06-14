@@ -16,11 +16,13 @@
     text-decoration: line-through;
 }
 
-.button-check{
-    float: right;
-    margin-right: 100px;
+.check-box{
+    
 }
 .padding-x{
     padding: 4px 9px;
+}
+
+.delete-box{
 
 }
