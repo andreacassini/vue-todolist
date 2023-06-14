@@ -13,5 +13,10 @@
 }
 
 .checked{
-    color: red;
+    text-decoration: line-through;
+}
+
+.button-check{
+    float: right;
+    margin-right: 100px;
 }

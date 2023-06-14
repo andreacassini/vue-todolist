@@ -25,6 +25,8 @@ createApp ({
     },
 
     methods: {
-            
+        changeTask(index){
+            this.tasks[index].done = !this.tasks[index].done;
+        }
         }
 }).mount('#app')
